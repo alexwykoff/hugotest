@@ -24,7 +24,7 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo -D --minify
+        run: hugo -t hugo-theme-shell -D --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
